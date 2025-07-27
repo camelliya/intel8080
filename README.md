@@ -15,7 +15,7 @@ Using CMake's `FetchContent`, add this to your CMakeLists.txt file:
 include(FetchContent)
 FetchContent_Declare(
         Intel8080
-        GIT_REPOSITORY "https://github.com/encephalalgia/intel8080.git"
+        GIT_REPOSITORY "https://github.com/camelliya/intel8080.git"
 )
 set(INTEL8080_TESTS OFF)
 FetchContent_MakeAvailable(Intel8080)
@@ -28,7 +28,7 @@ See [header file](include/Intel8080.h)
 ## Running Tests
 ### With CMake
 ```
-git clone https://github.com/encephalalgia/intel8080.git
+git clone https://github.com/camelliya/intel8080.git
 cd Intel8080/
 cmake -S . -B build -G your_generator -DCMAKE_BUILD_TYPE=RELEASE
 cmake --build build --config Release
